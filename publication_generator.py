@@ -92,7 +92,7 @@ def parse_bibtex_entry(entry, featured=False, overwrite=False, normalize=False, 
         page["subtitle"] = clean_bibtex_str(entry["subtitle"])
     
     if "year" in entry:
-        page["year"] = year
+        page["year"] = entry["year"]
     
     authors = None
     if "author" in entry:
